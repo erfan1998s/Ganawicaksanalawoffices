@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kantor Hukum ABC</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background-color: #f9f9f9; }
+    header, footer { background-color: #1a1a1a; color: white; padding: 20px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { color: #222; }
+    .services, .team { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); padding: 20px; flex: 1; min-width: 250px; border-radius: 10px; }
+    form input, form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    form button { padding: 12px 25px; background-color: #1a1a1a; color: white; border: none; cursor: pointer; border-radius: 5px; }
+    form button:hover { background-color: #333; }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .services, .team { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Kantor Hukum ABC</h1>
+    <nav>
+      <a href="#about">Tentang Kami</a>
+      <a href="#services">Layanan</a>
+      <a href="#team">Tim</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>Tentang Kami</h2>
+    <p>Kantor Hukum ABC adalah firma hukum profesional yang menangani berbagai permasalahan hukum dengan integritas dan dedikasi. Kami berkomitmen memberikan pelayanan terbaik bagi individu maupun perusahaan.</p>
+  </section>
+
+  <section id="services">
+    <h2>Layanan Hukum</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Hukum Perdata</h3>
+        <p>Penyelesaian sengketa, wanprestasi, gugatan perdata, dan lainnya.</p>
+      </div>
+      <div class="card">
+        <h3>Hukum Pidana</h3>
+        <p>Pembelaan terhadap tersangka/terdakwa, pendampingan proses hukum pidana.</p>
+      </div>
+      <div class="card">
+        <h3>Hukum Keluarga</h3>
+        <p>Perkara perceraian, hak asuh anak, pembagian warisan.</p>
+      </div>
+      <div class="card">
+        <h3>Hukum Bisnis</h3>
+        <p>Perizinan usaha, kontrak bisnis, legal audit perusahaan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <h2>Tim Kami</h2>
+    <div class="team">
+      <div class="card">
+        <h3>Adv. Budi Santoso, SH</h3>
+        <p>Berpengalaman lebih dari 15 tahun dalam litigasi perdata dan mediasi keluarga.</p>
+      </div>
+      <div class="card">
+        <h3>Adv. Sinta Dewi, SH</h3>
+        <p>Spesialisasi dalam hukum pidana, hak asasi manusia, dan pendampingan penyidikan.</p>
+      </div>
+      <div class="card">
+        <h3>Adv. Riko Pratama, SH, MH</h3>
+        <p>Pakar hukum korporasi dan kontrak bisnis dengan pengalaman nasional dan internasional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak Kami</h2>
+    <p>Silakan isi formulir di bawah ini atau hubungi kami langsung melalui WhatsApp untuk konsultasi cepat.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Nama Anda" required>
+      <input type="email" name="email" placeholder="Email Anda" required>
+      <textarea name="message" placeholder="Pesan Anda" rows="5" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kantor Hukum ABC. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <a href="https://wa.me/6281234567890" class="whatsapp-button" target="_blank" title="Hubungi via WhatsApp">📱</a>
+</body>
+</html>
